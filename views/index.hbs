@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="lawyernearby">
+      <h1>Backend Server APIs</h1>
+      <button id="getLawyersButton">Get List of Lawyers</button>
+      <div id="lawyersList"></div>
+    </div>
+    <br>
+    <div class="pdf-or-image-to-text">
+      <form action="/extracttextfromimage" method="post" enctype="multipart/form-data">
+      input file: <input type="file" name="document" id="file" accept="image/*" />
+      <button>Extract</button>      
+      </form>
+      <form action="/texttospeech" method="post">
+        <button type="submit" name="language" value="bn">Translate to Bengali</button>
+    </form>
+    </div>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpa_jqY33QDktBOQMIWzx-Yb99X1d8_Ag&libraries=places&callback=initialize"
+    ></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
